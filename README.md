@@ -29,6 +29,7 @@ This project aimed at helping farmers identify and diagnose plant diseases throu
 ## Installation
 
 1. Clone the repository:
+   
    ```sh
    git clone https://github.com/your-username/cucumber-leaf-disease-prediction.git
    cd cucumber-leaf-disease-prediction.git
@@ -46,7 +47,7 @@ This project aimed at helping farmers identify and diagnose plant diseases throu
    ```
 
 ## Dataset
-
+[Link to dataset](https://data.mendeley.com/datasets/y6d3z6f8z9/1)
 
 1. **Number of Classes**: The dataset comprises eight distinct cucumber disease classes: Anthracnose, Bacterial Wilt, Belly Rot, Downy Mildew, Pythium Fruit Rot, Gummy Stem Blight, Fresh leaves (healthy leaves), and Fresh cucumber (healthy cucumbers) in thi project we only used Image related to leafs which are Anthracnose, Bacterial Wilt, Downy Mildew, Gummy Stem Blight, Fresh leaves.
 
