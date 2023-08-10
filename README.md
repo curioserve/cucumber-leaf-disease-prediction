@@ -29,17 +29,10 @@ This project aimed at helping farmers identify and diagnose plant diseases throu
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/leaf-disease-prediction.git
-   cd leaf-disease-prediction
+   git clone https://github.com/your-username/cucumber-leaf-disease-prediction.git
+   cd cucumber-leaf-disease-prediction.git
    ```
-
-2. Set up the Python environment:
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-3. Download the pretrained AlexNet weights from [link_to_weights](link_to_weights) and place them in the `weights` directory.
-
+   
 ## Usage
 
 1. Run the application:
