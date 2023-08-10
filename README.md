@@ -15,6 +15,7 @@ This project aimed at helping farmers identify and diagnose plant diseases throu
 - [Dataset](#dataset)
 - [Model Architecture](#model-architecture)
 - [Results](#results)
+- [Reference](#reference)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -35,40 +36,48 @@ This project aimed at helping farmers identify and diagnose plant diseases throu
    
 ## Usage
 
-1. Run the application:
+1. Download GPDCNN.py 
+
+2. 
    ```sh
-   python app.py
+   from GPDCNN import GPDCNN
+   predictor = GPDCNN()
+   predictor.predict(PATH_TO_CUCUMBER_LEAF_IMAGE)
    ```
-
-2. Access the application by opening a web browser and navigating to `http://localhost:5000`.
-
-3. Upload a leaf image to get a prediction for potential diseases.
 
 ## Dataset
 
-Describe the dataset you used for training and testing your model. Include any relevant information about data preprocessing and augmentation techniques.
+
+1. **Number of Classes**: The dataset comprises eight distinct cucumber disease classes: Anthracnose, Bacterial Wilt, Belly Rot, Downy Mildew, Pythium Fruit Rot, Gummy Stem Blight, Fresh leaves (healthy leaves), and Fresh cucumber (healthy cucumbers) in thi project we only used Image related to leafs which are Anthracnose, Bacterial Wilt, Downy Mildew, Gummy Stem Blight, Fresh leaves.
+
+2. **Data Collection**: A total of 1280 original images of cucumber samples were collected directly from real fields. These images serve as the foundation for building the dataset.
+
+3. **Data Augmentation**: To enhance the diversity and size of the dataset, data augmentation techniques have been applied to the original images. These augmentation methods include flipping, shearing, zooming, and rotation. As a result, a total of 6400 augmented images were generated from the original 1280 images.
+
 
 ## Model Architecture
 
-Explain the architecture of the GPDCNN model, highlighting the key features such as dilated convolutional layers and global pooling. You can include code snippets for building and training the model.
-
-```python
-# Example code snippet for building the GPDCNN model
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, GlobalAveragePooling2D, ...
-
-model = Sequential([
-    # Build your model layers here
-])
-```
+<p align="center">
+  <img src="https://github.com/ali0salimi/cucumber-leaf-disease-prediction/blob/main/model-architecture.png" alt="Project Demo" width="800">
+</p>
+GPDCNN, a modified CNN inspired by AlexNet, employs dilated convolutions and global pooling. With 13 layers including Inception and Concat, it enhances feature extraction for detecting cucumber leaf diseases. Dilated convolutions capture intricate patterns, while global pooling aids generalization, fostering accurate disease identification.
 
 ## Results
 
-Share the performance metrics and evaluation results of your model. Include visualizations like accuracy/loss curves, confusion matrices, and sample predictions.
+accuracy on test set after 30 epochs 
+```sh
+16/16 [==============================] - 5s 116ms/step - loss: 0.1125 - accuracy: 0.9688
+accuracy on test set : 0.96875
+```
 
-<p align="center">
-  <img src="path/to/results/visualization.png" alt="Results Visualization" width="600">
-</p>
+## Reference
+
+If you're using the GPDCNN architecture, it's based on the research described in the following paper:
+
+- Author(s). <i>Cucumber leaf disease identiﬁcation with global pooling dilated
+convolutional neural network<i> *Elsevier*, 2019. [Link to the Paper](https://www.sciencedirect.com/science/article/abs/pii/S0168169918317976)
+
+Please make sure to give proper credit to the original authors by referencing their work.
 
 ## Contributing
 
@@ -79,6 +88,3 @@ Contributions are welcome! If you find any issues or want to enhance the project
 This project is licensed under the [MIT License](LICENSE).
 ```
 
-Replace placeholders such as `your-username`, `path/to/your/project/image.png`, `link_to_weights`, and others with the appropriate information and paths for your project. Customize the headings, content, and visuals as needed to accurately represent your project.
-
-Remember that a well-structured README should include clear explanations, visual aids, and links to relevant resources for easy navigation and understanding by others.
