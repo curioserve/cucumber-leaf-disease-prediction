@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Leaf Disease Prediction is a machine learning project aimed at helping farmers identify and diagnose plant diseases through image analysis. This project utilizes the GPDCNN (Global Pooling Dilated Convolutional Neural Network) architecture, which employs dilated convolutional layers with global pooling. The model is initialized with pre-trained weights from the AlexNet architecture.
+This project aimed at helping farmers identify and diagnose plant diseases through image analysis. This project utilizes the GPDCNN (Global Pooling Dilated Convolutional Neural Network) architecture, which employs dilated convolutional layers with global pooling. The model is initialized with pre-trained weights from the AlexNet architecture.
 
 <p align="center">
   <img src="https://github.com/ali0salimi/cucumber-leaf-disease-prediction/blob/main/dataset_sample.png" alt="Project Demo" width="800">
