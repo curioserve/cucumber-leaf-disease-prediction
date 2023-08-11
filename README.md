@@ -37,9 +37,13 @@ This project aimed at helping farmers identify and diagnose plant diseases throu
    
 ## Usage
 
-1. Download GPDCNN.py 
+1. Download GPDCNN.py
 
-2. 
+2. Install requirments
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Run the following code
    ```sh
    from GPDCNN import GPDCNN
    predictor = GPDCNN()
