@@ -88,8 +88,3 @@ Please make sure to give proper credit to the original authors by referencing th
 
 Contributions are welcome! If you find any issues or want to enhance the project, feel free to submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-```
-
